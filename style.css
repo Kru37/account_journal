@@ -1,0 +1,101 @@
+.radio-btn {
+  padding: 10px 5px;
+}
+.radio-btn label {
+  padding-right: 70px;
+}
+.showtotal {
+  position: relative;
+  padding: 5px;
+  margin-top: 0;
+  width: 100%;
+  left: 11px;
+}
+.line {
+  margin-bottom: 0;
+}
+.col-6 {
+  position: relative;
+  left: 38%;
+  font-size: medium;
+  font-weight: bold;
+}
+.col-3 {
+  position: absolute;
+  left: 68%;
+  font-size: medium;
+  font-weight: bold;
+}
+.col-1 {
+  position: absolute;
+  right: 15.3%;
+  font-size: medium;
+  font-weight: bold;
+}
+/* #totalcredit {
+  position: absolute;
+  right: 11%;
+  width: 300px;
+}
+#totaldebit {
+  position: absolute;
+  right: 21%;
+  width: 300px;
+} */
+.materialert {
+  position: relative;
+  min-width: 150px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.1s linear;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ef5350;
+}
+.materialert .material-icons {
+  margin-right: 10px;
+}
+.errormsg {
+  text-align: center;
+  font-size: medium;
+}
+.pulse {
+  position: relative;
+}
+/*  */
+.add-btn,
+.back-btn,
+.update-btn,
+.delete-btn {
+  width: 20%;
+}
+
+.clear-btn {
+  width: max-content;
+  word-wrap: break-word;
+  font-size: medium;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 500px) {
+  .col-1 {
+    right: 12.5%;
+  }
+  .col-3 {
+    left: 67%;
+  }
+}
