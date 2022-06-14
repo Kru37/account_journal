@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Account Journal</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css">
-    <title>Tracalorie | Meal & Calorie Tracker</title>
-</head>
-
-<body>
+  <body>
     <!-- Navbar -->
     <nav>
-        <div class="nav-wrapper   teal lighten-3">
-
-            <div class="container">
-                <a class="btn-floating pulse btn-large waves-effect waves-light "><i class="material-icons">account_balance</i></a>
-                <a href="#" class="brand-logo center">Accounts</a>
-                <ul class="right">
-                    <li><a href="#" class="clear-btn btn-small  light-green lighten-3">Clear  All</a></li>
-                </ul>
-            </div>
+      <div class="nav-wrapper teal lighten-3">
+        <div class="container">
+          <a class="btn-floating pulse btn-large waves-effect waves-light"
+            ><i class="material-icons">account_balance</i></a
+          >
+          <a href="#" class="brand-logo center">Accounts</a>
+          <ul class="right">
+            <li>
+              <a href="#" class="clear-btn btn-small light-green lighten-3"
+                >Clear All</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <br>
+    <br />
 
     <div class="container">
-        <!-- Form Card -->
-        <div class="card">
-            <div class="card-content">
-                <span class="card-title">Add Amount</span>
-                <form class="col" action="#">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input type="text" placeholder="Account title" id="title">
-                            <label for="title">Title</label>
-                        </div>
-                        <div class="input-field col s3">
-                            <input type="number" placeholder="$ amount" id="amount">
-                            <label for="amount">Amount</label>
-                        </div>
-                        <div class="input-field col s3">
-                            <input type="number" placeholder="Add Ref" id="ref">
-                            <label for="ref">Ref</label>
-                        </div>
-                      <div class="radio-btn">
-                        <input id="debit" name="group1" type="radio" value="debit" checked/>
-                        <label for="debit" class="black-text">Debit</label>
-                        <input id="credit" name="group1" type="radio" value="credit" />
-                        <label for="credit" class="black-text">Credit</label>
+      <!-- Form Card -->
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Add Amount</span>
+          <form class="col" action="#">
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" placeholder="Account title" id="title" />
+                <label for="title">Title</label>
+              </div>
+              <div class="input-field col s3">
+                <input type="number" placeholder="$ amount" id="amount" />
+                <label for="amount">Amount</label>
+              </div>
+              <div class="input-field col s3">
+                <input type="number" placeholder="Add Ref" id="ref" />
+                <label for="ref">Ref</label>
+              </div>
+              <div class="radio-btn">
+                <input
+                  id="debit"
+                  name="group1"
+                  type="radio"
+                  value="debit"
+                  checked
+                />
+                <label for="debit" class="black-text">Debit</label>
+                <input id="credit" name="group1" type="radio" value="credit" />
+                <label for="credit" class="black-text">Credit</label>
+              </div>
 
-
-                      </div>
-
-           
-                        <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Submit</button>
-                        <button class="update-btn btn orange"><i class="fa fa-pencil-square-o"></i> Update </button>
-                        <button class="delete-btn btn red"><i class="fa fa-remove"></i> Delete </button>
-                        <button class="back-btn btn grey pull-right"><i class="fa fa-chevron-circle-left"></i>
-                            Back</button>
-                    </div>
-                </form>
+              <button class="add-btn btn blue darken-3">
+                <i class="fa fa-plus"></i> Submit
+              </button>
+              <button class="update-btn btn orange">
+                <i class="fa fa-pencil-square-o"></i> Update
+              </button>
+              <button class="delete-btn btn red">
+                <i class="fa fa-remove"></i> Delete
+              </button>
+              <button class="back-btn btn grey pull-right">
+                <i class="fa fa-chevron-circle-left"></i> Back
+              </button>
             </div>
+          </form>
         </div>
+      </div>
 
-        <!-- Calorie Count -->
-       
+      <!-- Calorie Count -->
 
-        <!-- Item List -->
-        <table class="collect centered">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Account</th>
-                    <th>Ref</th>
-                    <th>Debit</th>
-                    <th>Credit</th>
-                </tr>
-            </thead>
-        
-            <tbody class="tablebody">
-                <!-- <tr>
-                    <td>Alvin</td>
-                    <td>Eclair</td>
-                    <td>$0.87</td>
-                </tr>
-                <tr>
-                    <td>Alan</td>
-                    <td>Jellybean</td>
-                    <td>$3.76</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Lollipop</td>
-                    <td></td>
-                    <td>600</td>
-                    <td>700</td>
-                </tr>
-                 -->
-           
-            </tbody>
-          
+      <!-- Item List -->
+      <table class="collect centered">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Account</th>
+            <th>Ref</th>
+            <th>Debit</th>
+            <th>Credit</th>
+          </tr>
+        </thead>
 
-            
-        </table>
-        <hr class="line">
-        <div class="row cyan lighten-5 showtotal" >
-            <span id='total'  class="col-6" >Total :-</span>
-            <span id="totaldebit" class="col-3" ></span>
-            <span id="totalcredit"class='col-1' ></span>
-        </div>
-        
+        <tbody class="tablebody">
+          <tr class="table_end">
+            <td></td>
+            <td>Total</td>
+            <td></td>
+            <td><span id="debitcost">600</span></td>
+            <td id="creditcost">700</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
