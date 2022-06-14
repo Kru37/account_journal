@@ -32,6 +32,14 @@
   font-size: medium;
   font-weight: bold;
 }
+.table_end {
+  border-top: 1px solid black;
+}
+
+.table_end td {
+  font-weight: 700;
+  font-size: 1rem;
+}
 /* #totalcredit {
   position: absolute;
   right: 11%;
